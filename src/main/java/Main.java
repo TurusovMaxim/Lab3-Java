@@ -8,8 +8,6 @@ public class Main {
         long end = 0;
         long reiterations = 100000;
 
-        String result;
-
         Compare compare = new Compare(begin, end);
 
         ArrayList<Integer> arrayList = new ArrayList<>();
@@ -18,9 +16,6 @@ public class Main {
 
         String title = "\nTime (ms)  " + "  method  " + "  list type\n";
         System.out.println(title);
-
-        //return result
-        result = compare.toString();
 
         //add
         compare.compareAddToEnd(arrayList, reiterations);
